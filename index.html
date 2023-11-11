@@ -14,21 +14,30 @@
   <div class="container text-center">
     <audio src="music.mp3" id="audio"></audio>
 
+   <div id="home">
     <img src="diya.gif" alt="diya">
     <h1 class="display-5 mt-2">Wishing You Sparking festival of lights, Happy Diwali !!</h1>
-    <button class="btn btn-dark mt-3" onclick="playAudio()">Click Me</button>
+    <div class="d-flex gap-2 align-items-center justify-content-center mt-4">
+      <button class="btn btn-dark" onclick="playAudio()">Click Me</button>
+      <button class="btn btn-dark" onclick="displayWisher()">Diwali Wisher</button>
+    </div>
+   </div>
+
+    
+    <div id="wish-box">
+      <h1>Diwali Wish Generator</h1>
+    <div id="wish-container">
+       <textarea id="random-wish" rows="5" class="form-control mt-3" placeholder="Click the button to generate a random Diwali wish." disabled ></textarea>
+    </div>
+   <div class="mt-4">
+    <button id="generate-wish" class="btn btn-light">Generate Wish</button>
+    <button id="copy-wish" class="btn btn-light">Copy Wish</button>
+    <button class="btn btn-light" onclick="window.location.reload()">Home</button>
+   </div>
+    </div>
   </div>
-  <script>
-    var audio = document.getElementById('audio')
-    function playAudio() {
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    }
-  </script>
+  
+  <script src="script.js"></script>
 </body>
 
 </html>
