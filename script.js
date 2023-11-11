@@ -16,7 +16,8 @@ const diwaliWishes = [
     "Wishing you a year filled with love, light, and laughter. Happy Diwali!",
     "May the divine light of Diwali spread into your life peace, prosperity, happiness, and good health.",
     "Wishing you a sparkling Diwali and a year filled with warmth and love.",
-    "May the beauty of Diwali fill your home with happiness, and may the coming year provide you with everything you've been searching for."
+    "May the beauty of Diwali fill your home with happiness, and may the coming year provide you with everything you've been searching for.",
+    ""
 ];
 
 const wishContainer = document.getElementById("random-wish");

@@ -15,8 +15,8 @@
     <audio src="music.mp3" id="audio"></audio>
 
    <div id="home">
-    <img src="diya.gif" alt="diya">
-    <h1 class="display-5 mt-2">Wishing You Sparking festival of lights, Happy Diwali !!</h1>
+    <img src="diya.gif" alt="diya" class="img-fluid"  width="200">
+    <h1 class="display-5">Wishing You Sparking festival of lights, Happy Diwali !!</h1>
     <div class="d-flex gap-2 align-items-center justify-content-center mt-4">
       <button class="btn btn-dark" onclick="playAudio()">Click Me</button>
       <button class="btn btn-dark" onclick="displayWisher()">Diwali Wisher</button>
@@ -29,14 +29,16 @@
     <div id="wish-container">
        <textarea id="random-wish" rows="5" class="form-control mt-3" placeholder="Click the button to generate a random Diwali wish." disabled ></textarea>
     </div>
-   <div class="mt-4">
+   <div class="mt-4 d-flex align-items-center justify-content-center gap-2 flex-wrap">
     <button id="generate-wish" class="btn btn-light">Generate Wish</button>
     <button id="copy-wish" class="btn btn-light">Copy Wish</button>
     <button class="btn btn-light" onclick="window.location.reload()">Home</button>
    </div>
     </div>
   </div>
-  
+  <footer class="fixed-bottom">
+    <p class="text-center">By Ankit Jha</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 
